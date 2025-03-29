@@ -4,12 +4,22 @@
   "version": "0.0.1",
   "description": "Dany Pa basic configs",
   "type": "module",
+  "main": "./dist/dany-devkit.umd.cjs",
+  "module": "./dist/dany-devkit.es.js",
   "files": [
-    "configs"
+    "./configs"
   ],
   "exports": {
-    "./eslint": "./configs/eslint.js",
-    "./prettier": "./configs/prettier.js"
+    ".": {
+      "import": "./dist/dany-devkit.es.js",
+      "require": "./dist/dany-devkit.umd.cjs"
+    },
+    "./*": {
+      "import": "./*",
+      "require": "./*"
+    }
+  },
+  "scripts": {
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",
@@ -22,7 +32,7 @@
     "eslint": ">= 9",
     "eslint-config-prettier": ">= 9",
     "eslint-plugin-vue": ">= 9",
-    "typescript-eslint": ">= 8",
-    "globals": ">=15"
+    "globals": ">=15",
+    "typescript-eslint": ">= 8"
   }
 }
