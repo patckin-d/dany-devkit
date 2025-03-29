@@ -1,32 +1,53 @@
 # Dany DevKit
 
-Базовые конфигурации для разработки от Dany Pa.
+Basic development configurations by Dany Pa.
 
-## Особенности
+## Features
 
-- Конфигурация TypeScript
-- Конфигурация ESLint с поддержкой Vue
-- Конфигурация Prettier
-- Правила Git ignore
-- NPM скрипты для сборки
+- ESLint configuration with Vue support
+- Prettier configuration
+- Git ignore rules
 
-## Установка
+## Installation
 
-1. Клонируйте репозиторий
-2. Установите зависимости:
+1. Clone the repository
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-## Использование
+## Usage
 
-### Сборка
+Eslint:
 
-Для сборки проекта:
+```js
+// eslint.config.js
+import { setupDanyEslintConfig } from 'dany-devkit/configs/eslint.js';
+
+const customEslintConfig = {}
+export default setupTravelEslintConfig(customEslintConfig);
+```
+
+Prettier:
+```js
+// prettier.config.js
+import { danyPrettierConfig } from 'dany-devkit/configs/prettier.js'
+
+const customPrettierConfig = {}
+
+export default {
+  ...travelPrettierConfig,
+  ...customPrettierConfig
+}
+```
+
+### Build
+
+To build the project:
 ```bash
 npm run build
 ```
 
-## Лицензия
+## License
 
 MIT 
