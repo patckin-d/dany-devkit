@@ -1,5 +1,7 @@
 # Dany DevKit
 
+[![npm version](https://img.shields.io/npm/v/dany-devkit.svg?color=blue)](https://www.npmjs.com/package/dany-devkit)
+
 Basic development configurations by Dany Pa.
 
 ## Features
@@ -37,13 +39,6 @@ export default {
   ...danyPrettierConfig,
   ...customPrettierConfig
 }
-```
-
-### Build
-
-To build the project:
-```bash
-npm run build
 ```
 
 ## Publishing
