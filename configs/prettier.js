@@ -1,0 +1,21 @@
+export const danyPrettierConfig = {
+  experimentalTernaries: false,
+  printWidth: 100,
+  tabWidth: 2,
+  useTabs: false,
+  semi: false,
+  singleQuote: true,
+  quoteProps: "as-needed",
+  jsxSingleQuote: false,
+  trailingComma: "es5",
+  bracketSpacing: true,
+  bracketSameLine: false,
+  arrowParens: "always",
+  requirePragma: false,
+  proseWrap: "always",
+  htmlWhitespaceSensitivity: "css",
+  vueIndentScriptAndStyle: true,
+  endOfLine: "lf",
+  embeddedLanguageFormatting: "auto",
+  singleAttributePerLine: false
+}
