@@ -19,8 +19,12 @@
       "require": "./*"
     }
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "prepublishOnly": "npm run build"
   },
   "devDependencies": {
     "@eslint/js": "^9.18.0",

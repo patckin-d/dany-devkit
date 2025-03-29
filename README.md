@@ -10,10 +10,14 @@ Basic development configurations by Dany Pa.
 
 ## Installation
 
-1. Clone the repository
-2. Install dependencies:
+1. Add the GitHub Packages registry to your `.npmrc` file:
    ```bash
-   npm install
+   echo "@patckin-d:registry=https://npm.pkg.github.com" >> .npmrc
+   ```
+
+2. Install the package:
+   ```bash
+   npm install dany-devkit
    ```
 
 ## Usage
@@ -25,7 +29,7 @@ Eslint:
 import { setupDanyEslintConfig } from 'dany-devkit/configs/eslint.js';
 
 const customEslintConfig = {}
-export default setupTravelEslintConfig(customEslintConfig);
+export default setupDanyEslintConfig(customEslintConfig);
 ```
 
 Prettier:
@@ -36,7 +40,7 @@ import { danyPrettierConfig } from 'dany-devkit/configs/prettier.js'
 const customPrettierConfig = {}
 
 export default {
-  ...travelPrettierConfig,
+  ...danyPrettierConfig,
   ...customPrettierConfig
 }
 ```
@@ -47,6 +51,20 @@ To build the project:
 ```bash
 npm run build
 ```
+
+## Publishing
+
+To publish the package:
+
+1. Create a GitHub Personal Access Token with `write:packages` scope
+2. Login to GitHub Packages:
+   ```bash
+   npm login --registry=https://npm.pkg.github.com
+   ```
+3. Publish the package:
+   ```bash
+   npm publish
+   ```
 
 ## License
 
