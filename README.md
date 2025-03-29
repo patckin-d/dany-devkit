@@ -10,15 +10,9 @@ Basic development configurations by Dany Pa.
 
 ## Installation
 
-1. Add the GitHub Packages registry to your `.npmrc` file:
-   ```bash
-   echo "@patckin-d:registry=https://npm.pkg.github.com" >> .npmrc
-   ```
-
-2. Install the package:
-   ```bash
-   npm install dany-devkit
-   ```
+```bash
+npm install dany-devkit
+```
 
 ## Usage
 
@@ -56,12 +50,11 @@ npm run build
 
 To publish the package:
 
-1. Create a GitHub Personal Access Token with `write:packages` scope
-2. Login to GitHub Packages:
+1. Login to npm:
    ```bash
-   npm login --registry=https://npm.pkg.github.com
+   npm login
    ```
-3. Publish the package:
+2. Publish the package:
    ```bash
    npm publish
    ```

@@ -19,9 +19,6 @@
       "require": "./*"
     }
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "scripts": {
     "build": "vite build",
     "prepublishOnly": "npm run build"
