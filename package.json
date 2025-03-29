@@ -1,7 +1,7 @@
 {
   "name": "dany-devkit",
   "repository": "https://github.com/patckin-d/dany-devkit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dany Pa basic configs",
   "type": "module",
   "main": "./dist/dany-devkit.umd.cjs",
@@ -19,8 +19,7 @@
       "require": "./*"
     }
   },
-  "scripts": {
-  },
+  "scripts": {},
   "devDependencies": {
     "@eslint/js": "^9.18.0",
     "eslint-config-prettier": "^9.1.0",
